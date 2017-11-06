@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "content": "J'adore les chatons",
+      "img": "http://mymodernmet.com/wp/wp-content/uploads/archive/J1ttn9ZtwV6lXEux61KL_1082105496.jpeg",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "content": "Je ne sais plus quoi dire",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "content": "Je suis mort",
+      "userId": 2
+    }
+  ],
+  "Comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "content": "Miserables"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "firstName": "Un fan",
+      "lastName": "des chats"
+    },
+    {
+      "id": 2,
+      "firstName": "Un gars",
+      "lastName": "aigri"
+    }
+  ]
+}
