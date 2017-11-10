@@ -13,7 +13,7 @@ export class UserService {
         return this.http.get(`api/users/${id}`);
     }
 
-    getAll(id: number): Observable<User[]> {
+    getAll(): Observable<User[]> {
         return this.http.get(`api/users`);
     }
 

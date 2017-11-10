@@ -8,6 +8,7 @@ import {PostService} from './post.service';
 import { PostComponent } from './post/post.component';
 import {CommentModule} from '../comment/comment.module';
 import {UserModule} from '../user/user.module';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
     {
@@ -17,7 +18,6 @@ const appRoutes: Routes = [
             {path: '', component: PostListComponent, pathMatch: 'full'}
         ]
     },
-    // {path: 'admin', component: LivreListComponent},
 ];
 
 @NgModule({
@@ -26,6 +26,7 @@ const appRoutes: Routes = [
         CommentModule,
         HttpClientModule,
         UserModule,
+        FormsModule,
         RouterModule.forChild(appRoutes),
     ],
     declarations: [PostRootComponent, PostListComponent, PostComponent],

@@ -1,6 +1,10 @@
-Liste des commentaires
+<h1>Liste des posts</h1>
 <ul>
   <li *ngFor="let post of posts">
     <a [routerLink]="[post.id]">{{ post.content }}</a>
   </li>
 </ul>
+<form (submit)="add()">
+  <input type="text" [(ngModel)]="post.content" name="content" />
+  <input type="submit" content="Envoyer" />
+</form>
