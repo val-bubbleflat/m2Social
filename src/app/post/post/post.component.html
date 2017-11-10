@@ -1,3 +1,4 @@
 <p>{{ post.content }}</p>
-<img [src]="post.img" *ngIf="post.img">
+<img [src]="post.img" *ngIf="post && post.img">
+<p>By <app-user *ngIf="post && post.userId" [id]="post.userId"></app-user></p>
 <app-comment-root *ngIf="post" [livreId]="post.id"></app-comment-root>

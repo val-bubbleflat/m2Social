@@ -7,6 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {PostService} from './post.service';
 import { PostComponent } from './post/post.component';
 import {CommentModule} from '../comment/comment.module';
+import {UserModule} from '../user/user.module';
 
 const appRoutes: Routes = [
     {
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
         CommonModule,
         CommentModule,
         HttpClientModule,
+        UserModule,
         RouterModule.forChild(appRoutes),
     ],
     declarations: [PostRootComponent, PostListComponent, PostComponent],
