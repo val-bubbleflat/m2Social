@@ -6,8 +6,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PostService} from './post.service';
 import { PostComponent } from './post/post.component';
-import { PostCommentComponent } from './post-comment/post-comment.component';
-import { PostCommentListComponent } from './post-comment-list/post-comment-list.component';
+import {CommentModule} from '../comment/comment.module';
 
 const appRoutes: Routes = [
     {
@@ -23,10 +22,11 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [
         CommonModule,
+        CommentModule,
         HttpClientModule,
         RouterModule.forChild(appRoutes),
     ],
-    declarations: [PostRootComponent, PostListComponent, PostComponent, PostCommentComponent, PostCommentListComponent],
+    declarations: [PostRootComponent, PostListComponent, PostComponent],
     providers: [PostService]
 })
 export class PostModule {
