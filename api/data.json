@@ -43,6 +43,13 @@
       "userId": 1,
       "timestamp": 0,
       "img": "http://www.lfchistory.net/Images/lfc/LIVE_5396.gif"
+    },
+    {
+      "id": 8,
+      "content": "hey",
+      "userId": 1,
+      "timestamp": "1510312552455",
+      "img": "sa ca"
     }
   ],
   "comments": [
@@ -129,6 +136,13 @@
       "userId": 1,
       "timestamp": 0,
       "postId": "5"
+    },
+    {
+      "id": 20,
+      "content": "loool",
+      "userId": 1,
+      "timestamp": "1510312576681",
+      "postId": "6"
     }
   ],
   "users": [

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PostService} from '../post.service';
 import {Post} from '../Post';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-post-list',
@@ -26,6 +27,7 @@ export class PostListComponent implements OnInit {
     }
 
     add() {
+        this.post.timestamp = moment().format('x');
         this.service.add(this.post).subscribe(post => {
             this.posts.push(post);
         });

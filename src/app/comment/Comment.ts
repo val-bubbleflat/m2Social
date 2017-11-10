@@ -3,5 +3,5 @@ export class Comment {
     postId: number;
     userId: number;
     content: String;
-    timestamp: number;
+    timestamp: number|string;
 }

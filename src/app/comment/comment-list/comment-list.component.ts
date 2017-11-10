@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CommentService} from '../comment.service';
 import {Comment} from '../Comment';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-comment-list',
@@ -29,6 +30,7 @@ export class CommentListComponent implements OnInit {
     }
 
     add(): void {
+        this.comment.timestamp = moment().format('x');
         this.service.add(this.livreId, this.comment).subscribe();
         this.comments.push(this.comment);
     }

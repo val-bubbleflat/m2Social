@@ -3,5 +3,5 @@ export class Post {
     content: String;
     img?: String;
     userId: number;
-    timestamp: number;
+    timestamp: number|string;
 }
