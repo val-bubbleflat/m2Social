@@ -36,6 +36,13 @@
       "content": "Mais pas les chats",
       "userId": 1,
       "timestamp": 0
+    },
+    {
+      "id": 7,
+      "content": "YNWA",
+      "userId": 1,
+      "timestamp": 0,
+      "img": "http://www.lfchistory.net/Images/lfc/LIVE_5396.gif"
     }
   ],
   "comments": [

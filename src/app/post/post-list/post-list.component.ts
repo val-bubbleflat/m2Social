@@ -25,11 +25,12 @@ export class PostListComponent implements OnInit {
         this.service.getAll().subscribe(posts => this.posts = posts);
     }
 
-    add(){
+    add() {
         this.service.add(this.post).subscribe(post => {
             this.posts.push(post);
         });
         this.post.content = '';
+        this.post.img = '';
     }
 
 }
