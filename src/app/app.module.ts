@@ -7,6 +7,7 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
     {path: '', redirectTo: '/posts', pathMatch: 'full'},
+    {path: 'users',  loadChildren: 'app/user/user.module#UserModule'}
 ];
 
 @NgModule({
