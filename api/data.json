@@ -115,6 +115,13 @@
       "userId": 1,
       "timestamp": 0,
       "postId": "1"
+    },
+    {
+      "id": 19,
+      "content": "lool",
+      "userId": 1,
+      "timestamp": 0,
+      "postId": "5"
     }
   ],
   "users": [

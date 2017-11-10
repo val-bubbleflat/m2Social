@@ -1,6 +1,7 @@
 <ul>
   <li *ngFor="let comment of comments">
-    {{ comment.content }}
+    <p>{{ comment.content }}</p>
+    <p>By <app-user [id]="comment.userId"></app-user></p>
   </li>
 </ul>
 <form (submit)="add()">
